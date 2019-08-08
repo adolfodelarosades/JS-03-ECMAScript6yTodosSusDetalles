@@ -11,24 +11,24 @@ JS define dos ámbitos para las variables:
 
 Ejemplo del uso de VAR:
 
-´´´
+```
 console.log( saludo );
 var saludo = "Hola Mundo";
 
 //output
 undefined
-´´´
+```
 
 Ejemplo del uso de LET:
 
-´´´
+```
 console.log( saludo );
 let saludo = "Hola Mundo";
 
 //output
 Uncaught ReferenceError: Cannot access 'saludo' before initialization
     at app.js:1
-´´´
+```
 
 Cuando declaramos una variable con `let` no podemos usarla antes de declararla.
 
