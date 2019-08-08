@@ -356,8 +356,8 @@ console.log( mensaje );
 Existe el tag `String.raw` que podemos asociar a un Template Literal para recuperar su valor tal cual sin interpretar los caracteres de escape.
 
 ```
-let mensaje = \`Hola \nMundo\\\\\`;
-let mensaje2 = String.raw \`Hola \nMundo\\\\\`;
+let mensaje = \`Hola \nMundo\\\`;
+let mensaje2 = String.raw \`Hola \nMundo\\\`;
 
 console.log(mensaje);
 console.log(mensaje2);
@@ -365,7 +365,7 @@ console.log(mensaje2);
 //output
 Hola 
 Mundo\
-Hola \nMundo\\\\
+Hola \nMundo\\
 ```
 
 ## Examen #2 
