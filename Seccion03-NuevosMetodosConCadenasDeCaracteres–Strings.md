@@ -180,8 +180,8 @@ let multiLinea = "<h1 class='red'>Título</h1>\n"
 
 console.log( multiLinea);
 
-let multiLinea2 = \`<h1 class='red'>Título</h1>
-<p>Hola Mundo</p>\`;
+let multiLinea2 = `<h1 class='red'>Título</h1>
+<p>Hola Mundo</p>`;
 
 console.log( multiLinea2);
 
@@ -201,7 +201,7 @@ Los Templates Literals tienen tags asociados a una función que nos permite vali
 let unidades = 5, 
     costo_unitario = 10;
 
-let mensaje = \`${unidades} lápices cuestan ${unidades * costo_unitario} euros\`;
+let mensaje = `${unidades} lápices cuestan ${unidades * costo_unitario} euros`;
 
 console.log( mensaje );
 
@@ -211,7 +211,7 @@ console.log( mensaje );
 
 Podemos asociar a nuestro Template Literal un tag como sigue:
 
-`let mensaje = etiqueta\`${unidades} lápices cuestan ${unidades * costo_unitario} euros\`;`
+`let mensaje = etiqueta`${unidades} lápices cuestan ${unidades * costo_unitario} euros`;`
 
 El tag `etiqueta` representa una función que se va a disparar justo cuando se este construyendo el Template Literal, como esa función aún no la hemos definido, si ejecutamos el programa nos dirá justo eso:
 
@@ -229,7 +229,7 @@ function etiqueta(){
 let unidades = 5, 
     costo_unitario = 10;
 
-let mensaje = etiqueta\`${unidades} lápices cuestan ${unidades * costo_unitario} euros\`;
+let mensaje = etiqueta`${unidades} lápices cuestan ${unidades * costo_unitario} euros`;
 console.log( mensaje );
 
 //output
@@ -248,7 +248,7 @@ function etiqueta(){
 let unidades = 5, 
     costo_unitario = 10;
 
-let mensaje = etiqueta\`${unidades} lápices cuestan ${unidades * costo_unitario} euros\`;
+let mensaje = etiqueta`${unidades} lápices cuestan ${unidades * costo_unitario} euros`;
 
 console.log( mensaje );
 
@@ -266,7 +266,7 @@ function etiqueta(){
 
 let unidades = 5, 
     costo_unitario = 10;
-let mensaje = etiqueta\`${unidades} lápices cuestan ${unidades * costo_unitario} euros\`;
+let mensaje = etiqueta`${unidades} lápices cuestan ${unidades * costo_unitario} euros`;
 console.log( mensaje );
 
 //output
@@ -344,7 +344,7 @@ function etiqueta(literales, ...substituciones){
 
 let unidades = 5, 
     costo_unitario = 10;
-let mensaje = etiqueta\`${unidades} lápices cuestan ${unidades * costo_unitario} euros\`;
+let mensaje = etiqueta`${unidades} lápices cuestan ${unidades * costo_unitario} euros`;
 console.log( mensaje );
 
 //output
@@ -356,8 +356,8 @@ console.log( mensaje );
 Existe el tag `String.raw` que podemos asociar a un Template Literal para recuperar su valor tal cual sin interpretar los caracteres de escape.
 
 ```
-let mensaje = \`Hola \nMundo\r \`;
-let mensaje2 = String.raw \`Hola \nMundo\r \`;
+let mensaje = `Hola \nMundo\r `;
+let mensaje2 = String.raw `Hola \nMundo\r `;
 
 console.log(mensaje);
 console.log(mensaje2);
