@@ -323,7 +323,6 @@ for( i in Object.keys( objeto )){
   console.log( Object.keys( objeto)[i]);
 }
 
-
 //output
 {0: 1, 2: 1, 3: 1, 15: 1, c: 1, x: 1, r: 1, b: 1, d: 1, a: 1}
 0, 2, 3, 15, c, x, r, b, d, a
