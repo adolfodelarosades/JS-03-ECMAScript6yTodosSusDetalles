@@ -235,6 +235,7 @@ mi-archivo.js
 
 Nótese que aun que se transfirieron la propiedad de un objeto a otro los dos objetos en su estructura son diferentes:
 
+```
 objReceptor
  {nombre: "mi-archivo.js"}
    nombre: "mi-archivo.js"
