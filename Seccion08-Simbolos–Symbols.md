@@ -243,8 +243,7 @@ Ya que los símbolos en este caso son exactamente los mismos puedo usar este seg
 console.log( objeto[userID2] );
 console.log( userID2 );
 
-
-//output 
+//output
 12345
 Symbol(userID)
 ```
@@ -360,7 +359,6 @@ let persona = {
   edad : 31,
   ["actividad"]:"actriz",
   [rodando]: "La última amiga..."
-
 }
 
 for( key in persona ){
@@ -387,7 +385,6 @@ let persona = {
   edad : 31,
   ["actividad"]:"actriz",
   [rodando]: "La última amiga..."
-
 }
 
 let simbolos = Object.getOwnPropertySymbols(persona);
@@ -413,7 +410,6 @@ rodando La última amiga...
 
 De esta manera tenemos que hacer dos barridos uno para las propiedades normales y otra para las propiedades identificadas con Symbols:
 
-
 ```
 let id = Symbol.for("id");
 let rodando = Symbol.for("rodando");
@@ -425,7 +421,6 @@ let persona = {
   edad : 31,
   ["actividad"]:"actriz",
   [rodando]: "La última amiga..."
-
 }
 
 for( key in persona ){
