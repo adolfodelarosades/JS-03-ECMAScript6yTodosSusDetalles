@@ -228,4 +228,4 @@ El parámetro enviado no es de tipo Cuadrado
 
 ## Examen #10 
 
-:+1+
+:+1:
